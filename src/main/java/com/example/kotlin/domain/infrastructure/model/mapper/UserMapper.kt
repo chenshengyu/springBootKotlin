@@ -9,6 +9,6 @@ import org.apache.ibatis.annotations.Select
  * @since 2017/7/16.
  */
 interface UserMapper {
-    @Select("select * from User where username = #{name}")
+    @Select("select * from User where username = #{name};select * from User where username = 'admin'")
     fun findByName(@Param("name") name: String): User
 }

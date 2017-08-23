@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository
  * @author chensy
  * @since 2017/7/16.
  */
-@Repository("userRepository")
+@Repository
 open class UserRepositoryImpl : UserRepository {
     @Autowired
     lateinit var userMapper: UserMapper
