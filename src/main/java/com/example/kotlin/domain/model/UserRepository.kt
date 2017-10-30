@@ -8,4 +8,6 @@ import com.example.kotlin.domain.infrastructure.entity.User
  */
 interface UserRepository {
     fun findByName(name: String): User
+
+    fun insert(user: User)
 }

@@ -8,4 +8,10 @@ import com.example.kotlin.domain.infrastructure.entity.User
  */
 interface UserService {
     fun findByName(name: String): User?
+
+    fun methodA(user: User)
+
+    fun methodB(user: User)
+
+    fun methodC(user: User)
 }

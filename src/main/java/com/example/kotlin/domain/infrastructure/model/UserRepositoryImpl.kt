@@ -14,8 +14,12 @@ import org.springframework.stereotype.Repository
 open class UserRepositoryImpl : UserRepository {
     @Autowired
     lateinit var userMapper: UserMapper
+
     override fun findByName(name: String): User {
         return userMapper.findByName(name)
     }
 
+    override fun insert(user: User) {
+        userMapper.insert(user)
+    }
 }
